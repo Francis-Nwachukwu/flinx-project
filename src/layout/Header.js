@@ -6,7 +6,7 @@ const Header = ({ setIsSidebarOpen }) => {
       <div>
         <div className="mb-4 max-md:mb-2">
           <p className="text-[12px] text-neutralGray">
-            Dashboard <span className="text-black">`&gt;` Payments</span>
+            Dashboard <span className="text-black">&gt; Payments</span>
           </p>
         </div>
         <div>

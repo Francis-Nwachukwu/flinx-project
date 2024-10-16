@@ -6,6 +6,8 @@ import {
 
 import React, { useMemo } from "react";
 import NoData from "./Nodata";
+import Button from "./Button";
+import { FRArrowLeft, FRArrowRight } from "assets/svgs";
 
 const Table = ({ columns, data, type }) => {
   data = useMemo(() => data, [data]);
@@ -62,6 +64,29 @@ const Table = ({ columns, data, type }) => {
               ))}
             </tbody>
           </table>
+          <div className="flex justify-between items-center gap-4 p-4">
+            <Button>
+              <div className="flex items-center gap-2">
+                <FRArrowLeft />
+                <p className="text-sm text-[#2E2E2E] font-semibold">Previous</p>
+              </div>
+            </Button>
+            <div className="flex gap-9">
+              <p className="text-[#5C5C5C] text-sm text-center">1</p>
+              <p className="text-[#5C5C5C] text-sm text-center">2</p>
+              <p className="text-[#5C5C5C] text-sm text-center">3</p>
+              <p className="text-[#5C5C5C] text-sm text-center">...</p>
+              <p className="text-[#5C5C5C] text-sm text-center">8</p>
+              <p className="text-[#5C5C5C] text-sm text-center">9</p>
+              <p className="text-[#5C5C5C] text-sm text-center">10</p>
+            </div>
+            <Button>
+              <div className="flex items-center gap-2">
+                <FRArrowRight />
+                <p className="text-sm text-[#2E2E2E] font-semibold">Next</p>
+              </div>
+            </Button>
+          </div>
         </div>
       )}
     </div>

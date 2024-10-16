@@ -276,3 +276,39 @@ export const FREyeOpen = () => (
     />
   </svg>
 );
+
+export const FRArrowLeft = () => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 14 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12.8333 6.99999H1.16663M1.16663 6.99999L6.99996 12.8333M1.16663 6.99999L6.99996 1.16666"
+      stroke="#2E2E2E"
+      stroke-width="1.67"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
+
+export const FRArrowRight = () => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 14 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.16669 6.99999H12.8334M12.8334 6.99999L7.00002 1.16666M12.8334 6.99999L7.00002 12.8333"
+      stroke="#2E2E2E"
+      stroke-width="1.67"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);

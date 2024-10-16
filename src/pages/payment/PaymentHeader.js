@@ -1,4 +1,5 @@
 import { FRExport, FRPlus } from "assets/svgs";
+import { toast } from "react-toastify";
 import Button from "shared/Button";
 
 const PaymentHeader = () => {
@@ -14,7 +15,11 @@ const PaymentHeader = () => {
             <p>Add Payment</p>
           </div>
         </Button>
-        <Button>
+        <Button
+          onClick={() =>
+            toast.success("Your file has been successfully downloaded")
+          }
+        >
           <div className="flex items-center gap-2">
             <FRExport />
             <p>Export</p>
