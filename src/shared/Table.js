@@ -82,8 +82,8 @@ const Table = ({ columns, data, type }) => {
             </div>
             <Button>
               <div className="flex items-center gap-2">
-                <FRArrowRight />
                 <p className="text-sm text-[#2E2E2E] font-semibold">Next</p>
+                <FRArrowRight />
               </div>
             </Button>
           </div>
